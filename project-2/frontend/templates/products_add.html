@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    <h1>products adding page</h1>
+
+    <from action="" method="POST">
+        {% csrf_token %}
+        {{ Product_form }}
+        <input type="submit" value="add product">
+
+    </from>
+    {% endblock %}

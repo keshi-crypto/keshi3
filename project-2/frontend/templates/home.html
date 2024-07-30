@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    <h1>django  application</h1>
+    {% if role == "admin" %}
+         <h1> welcome {{name}}</h1>
+
+         {% else %}
+         <h1>welcome guest!</h1>
+
+         {% endif %}
+
+         {% for num in numbers %}
+            
+          <p>the number is :{{num}}</p>
+          <br>
+
+           {% endfor %}
+
+
+           {% endblock %}
+          
